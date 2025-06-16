@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: harder-box;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgb(1, 1,1, 0.1);
+    border-radius: 10px;
+}
+body{
+    background-color: grey;
+}
+.sp{
+    font-size: 20px;
+}
+.formcontainer{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.formcontrol{
+    display: flex;
+    flex-direction: column;
+}
+label{
+font-size: 15px;
+margin-bottom: 5px;
+}
+
+input , select , textarea {
+    padding: 6px 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input :focus{
+    outline-color:red;
+}
+
+#button_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    
+}
+button{
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    border:2px solid red;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    background-color: #ccc;
+    border: 2px solid red;
+    color: black;
+     transition: 0.3s ease-in;
+}
